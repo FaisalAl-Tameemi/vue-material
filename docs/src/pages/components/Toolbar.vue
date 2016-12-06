@@ -309,13 +309,13 @@
               </md-button>
             </md-toolbar>
 
-            <md-toolbar class="md-large" v-md-theme="'brown'">
+            <md-toolbar class="md-large" v-md-theme="'white'">
               <div class="md-toolbar-container">
-                <md-button class="md-icon-button">
+								<md-button class="md-icon-button">
                   <md-icon>menu</md-icon>
                 </md-button>
 
-                <span style="flex: 1;"></span>
+                <h2 class="md-title" style="flex: 1">Vue Material</h2>
 
                 <md-button class="md-icon-button">
                   <md-icon>search</md-icon>
@@ -327,7 +327,11 @@
               </div>
 
               <div class="md-toolbar-container">
-                <h2 class="md-title">Vue Material</h2>
+								<md-tabs :md-dynamic-height="false" md-fixed>
+		              <md-tab id="books" md-label="Books"></md-tab>
+		              <md-tab id="pictures" md-label="Pictures"></md-tab>
+									<md-tab id="another" md-label="Another"></md-tab>
+		            </md-tabs>
               </div>
             </md-toolbar>
 
